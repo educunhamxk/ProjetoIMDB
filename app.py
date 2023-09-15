@@ -9,7 +9,23 @@ from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 
 #Stopwords em português
-stop_words_portuguese = stopwords.words('portuguese')
+stop_words_portuguese = [
+    'a', 'ao', 'aos', 'aquela', 'aquelas', 'aquele', 'aqueles', 'aquilo', 
+    'as', 'até', 'com', 'como', 'da', 'das', 'de', 'dela', 'delas', 'dele', 
+    'deles', 'depois', 'do', 'dos', 'e', 'ela', 'elas', 'ele', 'eles', 'em', 
+    'entre', 'era', 'eram', 'essa', 'essas', 'esse', 'esses', 'esta', 'estamos', 
+    'estas', 'estava', 'estavam', 'este', 'esteja', 'estejam', 'estejamos', 
+    'estes', 'estou', 'eu', 'foi', 'fomos', 'for', 'foram', 'fosse', 'fossem', 
+    'fui', 'há', 'isso', 'isto', 'já', 'lhe', 'lhes', 'mais', 'mas', 'me', 
+    'mesmo', 'meu', 'meus', 'minha', 'minhas', 'muito', 'na', 'nas', 'nem', 
+    'no', 'nos', 'nossa', 'nossas', 'nosso', 'nossos', 'num', 'numa', 'o', 
+    'os', 'ou', 'para', 'pela', 'pelas', 'pelo', 'pelos', 'por', 'qual', 'se', 
+    'seja', 'sejam', 'sejamos', 'sem', 'sua', 'suas', 'são', 'só', 'também', 
+    'te', 'tem', 'temos', 'tenha', 'tenham', 'tenhamos', 'tenho', 'ter', 'teu', 
+    'teus', 'tu', 'tua', 'tuas', 'tém', 'tínhamos', 'um', 'uma', 'você', 'vocês', 
+    'vos', 'à', 'às'
+]
+
 
 #Configuração de página extendida
 st.set_page_config(layout="wide") 
